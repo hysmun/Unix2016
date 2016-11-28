@@ -1,0 +1,268 @@
+(Serveur.cpp - 40) 1
+pid du Serveur1 : 22589
+Tab :
+    0 --          --     0     0     0     0     0
+    0 --          --     0     0     0     0     0
+    0 --          --     0     0     0     0     0
+    0 --          --     0     0     0     0     0
+    0 --          --     0     0     0     0     0
+    0 --          --     0     0     0     0     0
+(Serveur.cpp - 71) Message recu
+(Serveur.cpp - 74) dans NEWWINDOW
+pid du Serveur1 : 22589
+Tab :
+22592 --          --     0     0     0     0     0
+    0 --          --     0     0     0     0     0
+    0 --          --     0     0     0     0     0
+    0 --          --     0     0     0     0     0
+    0 --          --     0     0     0     0     0
+    0 --          --     0     0     0     0     0
+(Serveur.cpp - 71) Message recu
+(Serveur.cpp - 74) dans NEWWINDOW
+pid du Serveur1 : 22589
+Tab :
+22592 --          --     0     0     0     0     0
+22595 --          --     0     0     0     0     0
+    0 --          --     0     0     0     0     0
+    0 --          --     0     0     0     0     0
+    0 --          --     0     0     0     0     0
+    0 --          --     0     0     0     0     0
+(Serveur.cpp - 71) Message recu
+(Serveur.cpp - 74) dans NEWWINDOW
+pid du Serveur1 : 22589
+Tab :
+22592 --          --     0     0     0     0     0
+22595 --          --     0     0     0     0     0
+22598 --          --     0     0     0     0     0
+    0 --          --     0     0     0     0     0
+    0 --          --     0     0     0     0     0
+    0 --          --     0     0     0     0     0
+(Serveur.cpp - 71) Message recu
+(Serveur.cpp - 74) dans NEWWINDOW
+pid du Serveur1 : 22589
+Tab :
+22592 --          --     0     0     0     0     0
+22595 --          --     0     0     0     0     0
+22598 --          --     0     0     0     0     0
+22601 --          --     0     0     0     0     0
+    0 --          --     0     0     0     0     0
+    0 --          --     0     0     0     0     0
+(Serveur.cpp - 71) Message recu
+(Serveur.cpp - 137) dans LOGIN (Defooz)
+pid du Serveur1 : 22589
+Tab :
+22601 --Defooz    --     0     0     0     0     0
+22595 --          --     0     0     0     0     0
+22598 --          --     0     0     0     0     0
+22601 --          --     0     0     0     0     0
+    0 --          --     0     0     0     0     0
+    0 --          --     0     0     0     0     0
+(Serveur.cpp - 71) Message recu
+(Serveur.cpp - 137) dans LOGIN (Wagner)
+pid du Serveur1 : 22589
+Tab :
+22601 --Defooz    --     0     0     0     0     0
+22595 --Wagner    --     0     0     0     0     0
+22598 --          --     0     0     0     0     0
+22601 --          --     0     0     0     0     0
+    0 --          --     0     0     0     0     0
+    0 --          --     0     0     0     0     0
+(Serveur.cpp - 71) Message recu
+(Serveur.cpp - 137) dans LOGIN (MerceD)
+pid du Serveur1 : 22589
+Tab :
+22601 --Defooz    --     0     0     0     0     0
+22595 --Wagner    --     0     0     0     0     0
+22592 --MerceD    --     0     0     0     0     0
+22601 --          --     0     0     0     0     0
+    0 --          --     0     0     0     0     0
+    0 --          --     0     0     0     0     0
+(Serveur.cpp - 71) Message recu
+(Serveur.cpp - 256) dans ACCEPTER
+pid du Serveur1 : 22589
+Tab :
+22601 --Defooz    --     0     0     0     0     0
+22595 --Wagner    --     0     0     0     0     0
+22592 --MerceD    -- 22601     0     0     0     0
+22601 --          --     0     0     0     0     0
+    0 --          --     0     0     0     0     0
+    0 --          --     0     0     0     0     0
+(Serveur.cpp - 71) Message recu
+(Serveur.cpp - 256) dans ACCEPTER
+pid du Serveur1 : 22589
+Tab :
+22601 --Defooz    --     0     0     0     0     0
+22595 --Wagner    --     0     0     0     0     0
+22592 --MerceD    -- 22601 22595     0     0     0
+22601 --          --     0     0     0     0     0
+    0 --          --     0     0     0     0     0
+    0 --          --     0     0     0     0     0
+(Serveur.cpp - 71) Message recu
+(Serveur.cpp - 256) dans ACCEPTER
+pid du Serveur1 : 22589
+Tab :
+22601 --Defooz    --     0     0     0     0     0
+22595 --Wagner    -- 22592     0     0     0     0
+22592 --MerceD    -- 22601 22595     0     0     0
+22601 --          --     0     0     0     0     0
+    0 --          --     0     0     0     0     0
+    0 --          --     0     0     0     0     0
+(Serveur.cpp - 71) Message recu
+(Serveur.cpp - 256) dans ACCEPTER
+pid du Serveur1 : 22589
+Tab :
+22601 --Defooz    -- 22592     0     0     0     0
+22595 --Wagner    -- 22592     0     0     0     0
+22592 --MerceD    -- 22601 22595     0     0     0
+22601 --          --     0     0     0     0     0
+    0 --          --     0     0     0     0     0
+    0 --          --     0     0     0     0     0
+(Serveur.cpp - 71) Message recu
+(Serveur.cpp - 232) Dans ENVOYER (je suis l�)
+(Serveur.cpp - 71) Message recu
+(Serveur.cpp - 232) Dans ENVOYER (Moi aussi)
+(Serveur.cpp - 71) Message recu
+(Serveur.cpp - 232) Dans ENVOYER (de m�me)
+(Serveur.cpp - 71) Message recu
+(Serveur.cpp - 285) dans REFUSER
+pid du Serveur1 : 22589
+Tab :
+22601 --Defooz    -- 22592     0     0     0     0
+22595 --Wagner    -- 22592     0     0     0     0
+22592 --MerceD    --     0 22595     0     0     0
+22601 --          --     0     0     0     0     0
+    0 --          --     0     0     0     0     0
+    0 --          --     0     0     0     0     0
+(Serveur.cpp - 71) Message recu
+(Serveur.cpp - 256) dans ACCEPTER
+pid du Serveur1 : 22589
+Tab :
+22601 --Defooz    -- 22592     0     0     0     0
+22595 --Wagner    -- 22592     0     0     0     0
+22592 --MerceD    -- 22601 22595     0     0     0
+22601 --          --     0     0     0     0     0
+    0 --          --     0     0     0     0     0
+    0 --          --     0     0     0     0     0
+(Serveur.cpp - 71) Message recu
+(Serveur.cpp - 86) dans ENDWINDOW (2)
+(Serveur.cpp - 105) Message a 22592 --Defooz--
+(Serveur.cpp - 105) Message a 0 --Defooz--
+(Serveur.cpp - 105) Message a 0 --Defooz--
+(Serveur.cpp - 105) Message a 0 --Defooz--
+pid du Serveur1 : 22589
+Tab :
+22601 --          --     0     0     0     0     0
+22595 --Wagner    -- 22592     0     0     0     0
+22592 --MerceD    --     0 22595     0     0     0
+22601 --          --     0     0     0     0     0
+    0 --          --     0     0     0     0     0
+    0 --          --     0     0     0     0     0
+(Serveur.cpp - 71) Message recu
+(Serveur.cpp - 86) dans ENDWINDOW (11)
+(Serveur.cpp - 95) C'etait en ENDWINDOW
+(Serveur.cpp - 105) Message a 0 ----
+(Serveur.cpp - 105) Message a 0 ----
+(Serveur.cpp - 105) Message a 0 ----
+pid du Serveur1 : 22589
+Tab :
+    0 --          --     0     0     0     0     0
+22595 --Wagner    -- 22592     0     0     0     0
+22592 --MerceD    --     0 22595     0     0     0
+22601 --          --     0     0     0     0     0
+    0 --          --     0     0     0     0     0
+    0 --          --     0     0     0     0     0
+(Serveur.cpp - 71) Message recu
+(Serveur.cpp - 86) dans ENDWINDOW (11)
+(Serveur.cpp - 95) C'etait en ENDWINDOW
+(Serveur.cpp - 105) Message a 0 ----
+(Serveur.cpp - 105) Message a 0 ----
+(Serveur.cpp - 105) Message a 0 ----
+pid du Serveur1 : 22589
+Tab :
+    0 --          --     0     0     0     0     0
+22595 --Wagner    -- 22592     0     0     0     0
+22592 --MerceD    --     0 22595     0     0     0
+22601 --          --     0     0     0     0     0
+    0 --          --     0     0     0     0     0
+    0 --          --     0     0     0     0     0
+(Serveur.cpp - 71) Message recu
+(Serveur.cpp - 86) dans ENDWINDOW (11)
+(Serveur.cpp - 95) C'etait en ENDWINDOW
+(Serveur.cpp - 105) Message a 22595 --MerceD--
+(Serveur.cpp - 105) Message a 0 --MerceD--
+pid du Serveur1 : 22589
+Tab :
+    0 --          --     0     0     0     0     0
+22595 --Wagner    --     0     0     0     0     0
+    0 --          --     0     0     0     0     0
+22601 --          --     0     0     0     0     0
+    0 --          --     0     0     0     0     0
+    0 --          --     0     0     0     0     0
+^C
+student@solaris11DMSept2015:~/ApplicUnix2016LaBonne$ 
+----------------------------------------------------------------------
+void setPersonne1(const char *);
+	 const char* getPersonne1()const;
+	 void setPersonne2(const char *);
+	 const char* getPersonne2()const;
+	 void setPersonne3(const char *);
+	 const char* getPersonne3()const;
+	 void setPersonne4(const char *);
+	 const char* getPersonne4()const;
+	 void setPersonne5(const char *);
+	 const char* getPersonne5()const;
+	 void setMessage(const char *);
+	 void setChechBox1(bool);
+	 void setChechBox2(bool);
+	 void setChechBox3(bool);
+	 void setChechBox4(bool);
+	 void setChechBox5(bool);
+	 void setNom(const char*);
+	 void setGsm(const char*);
+	 void setUtilisateur(const char*);
+	 void on_ButtonDeconnecter_clicked();
+	 ------------------------------------------------------
+	  QWidget *centralWidget;
+    QLabel *labelUtilisateur;
+    QLineEdit *lineUtilisateur;
+    QPushButton *ButtonDeconnecter;
+    QPushButton *ButtonLogin;
+    QCheckBox *checkBox4;
+    QCheckBox *checkBox5;
+    QPushButton *ButtonRechercher;
+    QPushButton *ButtonModifier;
+    QLineEdit *linePersonne5;
+    QLineEdit *lineNom;
+    QLabel *labelPersonneConnectee;
+    QCheckBox *checkBox1;
+    QLabel *Renseignements;
+    QLineEdit *linePersonne1;
+    QCheckBox *checkBox3;
+    QLineEdit *linePersonne2;
+    QLineEdit *linePersonne4;
+    QLineEdit *linePersonne3;
+    QCheckBox *checkBox2;
+    QLabel *labelNom;
+    QLineEdit *lineGsm;
+    QLabel *labelGsm;
+    QTextEdit *textEdit;
+    QLineEdit *lineEdit;
+    QPushButton *ButtonTransferer;
+    QPushButton *ButtonTerminer;
+    QMenuBar *menuBar;
+    QStatusBar *statusBar;
+-----------------------
+
+AccesFichier                moc_utilisateur.cpp
+AccesFichier.cpp            moc_utilisateur.o
+ApplicUnix2016.pro          Serveur
+core                        Serveur.cpp
+CreeFichierUtilisateur      ui_utilisateur.h
+CreeFichierUtilisateur.cpp  Utilisateur
+Donnees.txt                 utilisateur.cpp
+Ecran.o                     Utilisateur.dat
+Fichier.ini                 utilisateur.h
+main.cpp                    utilisateur.o
+main.o                      utilisateur.ui
+makefile
+
