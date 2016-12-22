@@ -77,23 +77,29 @@ int main(int argc,char* argv[])
 		exit(-1);
 	}
 	
+	
+	lkTest.l_type = F_WRLCK;
 	lkTest.l_whence = SEEK_SET;
-	lkTest.l_pid = getpid();
+	lkTest.l_start = 0;
 	lkTest.l_len = sizeof(UTILISATEUR);
-	//on passe les enregistrement bloquer
-	fcntl(pf,F_GETLK, &lkTest);
+	fcntl(pf, F_GETLK, &lkTest);
 	while(lkTest.l_type == F_WRLCK)
 	{
 		lseek(pf, sizeof(UTILISATEUR), SEEK_CUR);
-		fcntl(pf,F_GETLK, &lkTest);
+		lkTest.l_start += sizeof(UTILISATEUR);
+		fcntl(pf, F_GETLK, &lkTest);
 	}
 	//on a trouver le premier que l'on peut lire'
 	
-	lkTest.l_type = F_RDLCK;
-	fcntl(pf, F_SETLKW, &lkTest);
-	i=read(pf, &buf, sizeof(UTILISATEUR));
-	lkTest.l_type =  F_UNLCK;
-	fcntl(pf, F_SETLK, &lkTest);
+	lkFile.l_type = typelk;
+	lkFile.l_start = lkTest.l_start;
+	if(fcntl(pf, F_SETLK, &lkFile) == -1)
+	{
+		lkFile.l_start += sizeof(UTILISATEUR);
+		lseek(pf, sizeof(UTILISATEUR), SEEK_CUR);
+	}
+	i = read(pf, &buf, sizeof(UTILISATEUR));
+	
 	j=0;
 	//on charge dans le fichier l'utilisateur rechercher
 	while(i > 0 && j != 1)
@@ -103,32 +109,40 @@ int main(int argc,char* argv[])
 			j = 1;
 			//break;
 		}
+		
 		if(j!=1)
-		{
-			lkTest.l_type = F_RDLCK;
-			fcntl(pf, F_SETLKW, &lkTest);
-			i=read(pf, &buf, sizeof(UTILISATEUR));
+		{	
+			lkFile.l_type = F_UNLCK;
+			fcntl(pf, F_SETLK, &lkFile);
+			
+			
+			lkFile.l_start += sizeof(UTILISATEUR);
+			lkFile.l_type = typelk;
+			//lkFile.l_start = lkTest.l_start;
+			if(fcntl(pf, F_SETLK, &lkFile) == -1)
+			{
+				lkFile.l_start += sizeof(UTILISATEUR);
+				lseek(pf, sizeof(UTILISATEUR), SEEK_CUR);
+			}
+	
+			i = read(pf, &buf, sizeof(UTILISATEUR));
+
 			Trace("A");
-			lseek(pf,-sizeof(UTILISATEUR), SEEK_CUR);
-			lkTest.l_type =  F_UNLCK;
-			fcntl(pf, F_SETLK, &lkTest);
-			lseek(pf, sizeof(UTILISATEUR), SEEK_CUR);
 		}
 			
 	}
 	
 	if(j==0)
 	{
-		Trace("nom trouver");
+		Trace("non trouver");
 		strcpy(M.Donnee, "non trouve");
+		lkFile.l_type = F_UNLCK;
+		fcntl(pf, F_SETLK, &lkFile);
 	}
 	else
 	{
 		Trace("trouver");
 		strcpy(M.Donnee, buf.Gsm);
-		lseek(pf,-sizeof(UTILISATEUR), SEEK_CUR);
-		fcntl(pf, F_SETLKW, &lkFile);
-		lseek(pf,sizeof(UTILISATEUR), SEEK_CUR);
 	}
 	
 	
@@ -146,6 +160,11 @@ int main(int argc,char* argv[])
 	}
 	kill(idUti,SIGUSR1);
 	Trace("Fin AccesFichier sauf recherche perso %s ", buf.Gsm);
+	if(REQ == RECHERCHER)
+	{
+		lkFile.l_type = F_UNLCK;
+		fcntl(pf, F_SETLK, &lkFile);
+	}
 	if(j==0)
 	{
 		close(pf);
@@ -154,7 +173,6 @@ int main(int argc,char* argv[])
 	
 	if(REQ == RECHERCHEPERSONNEL)
 	{
-		fcntl(pf, F_SETLKW, &lkFile);
 		Trace("recherche perso");
 		//seulement dans le cas d une requete personnel
 		if ((rc = msgrcv(idMsg,&M,sizeof(MESSAGE) - sizeof(long),getpid(),0)) == -1)
@@ -166,6 +184,7 @@ int main(int argc,char* argv[])
 		if(M.Requete == MODIFIER)
 		{
 			strcpy(buf.Gsm, M.Donnee);
+			lseek(pf, -sizeof(UTILISATEUR), SEEK_CUR);
 			write(pf, &buf, sizeof(UTILISATEUR));
 			Trace("modifier %s", buf.Gsm);
 			close(pf);
