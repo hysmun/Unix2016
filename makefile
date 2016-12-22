@@ -54,7 +54,9 @@ clean:
 	clear
 	clear
 	echo clean
-	rm -f *.o
+	rm -f *.o makefile~ *.o~ CreeFichierUtilisateur Serveur Utilisateur *.dat
+	make CreeFichierUtilisateur
+	./CreeFichierUtilisateur
 
 
 git:
@@ -68,6 +70,8 @@ git:
 ipcrm:
 	clear
 	ipcrm -Q 1234
+	ipcrm -M 1234
+	ipcrm -S 1234
 
 runUti:
 	clear
